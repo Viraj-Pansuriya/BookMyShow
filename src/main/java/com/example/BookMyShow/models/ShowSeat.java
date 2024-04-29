@@ -2,6 +2,7 @@ package com.example.BookMyShow.models;
 
 import jakarta.persistence.*;
 
+@Entity
 public class ShowSeat {
 
     @Id
