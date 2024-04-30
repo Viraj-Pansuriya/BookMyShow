@@ -12,16 +12,31 @@ public class Ticket {
     private int ID;
     private int totalprice;
     private int numberofSeats;
-
-    private Date bookedAt;
+    private String bookedTickets;
 
     @ManyToOne
     @JoinColumn
     private Shows show;
 
     @ManyToOne
-    @JoinColumn(nullable = true)
+    @JoinColumn
     private User user;
+
+    private Date bookedAt;
+
+    public String getBookedTickets() {
+        return bookedTickets;
+    }
+
+    public void setBookedTickets(String bookedTickets) {
+        this.bookedTickets = bookedTickets;
+    }
+
+
+
+    public Ticket() {
+
+    }
 
     public int getID() {
         return ID;
@@ -71,12 +86,15 @@ public class Ticket {
         this.user = user;
     }
 
-    public Ticket(int ID, int totalprice, int numberofSeats, Date bookedAt, Shows show, User user) {
+    public Ticket(int ID, int totalprice, int numberofSeats, String bookedTickets, Date bookedAt, Shows show, User user) {
         this.ID = ID;
         this.totalprice = totalprice;
         this.numberofSeats = numberofSeats;
+        this.bookedTickets = bookedTickets;
         this.bookedAt = bookedAt;
         this.show = show;
         this.user = user;
     }
+
+
 }

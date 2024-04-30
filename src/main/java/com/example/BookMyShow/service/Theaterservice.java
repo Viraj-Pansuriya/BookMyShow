@@ -65,6 +65,7 @@ public class Theaterservice {
             }
              curr = 0;
              ch = 'A';
+
             for(int i = 0 ; i < premium ; i++){
                 String seatNo = "C-" + ch + Integer.toString(curr);
                 TheaterSeat theaterSeat = new TheaterSeat();

@@ -97,7 +97,6 @@ public class ShowService {
 
         }
         showRepo.save(show);
-
         }
         catch (Exception e){
             result = e.toString();

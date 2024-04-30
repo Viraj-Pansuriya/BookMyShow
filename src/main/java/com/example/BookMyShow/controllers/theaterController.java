@@ -41,7 +41,5 @@ public class theaterController {
             String result = "Error in adding seat for theate";
             return new ResponseEntity<>(result , HttpStatus.NOT_FOUND);
         }
-
-
     }
 }

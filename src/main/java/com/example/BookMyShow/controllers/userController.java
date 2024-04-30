@@ -1,10 +1,12 @@
 package com.example.BookMyShow.controllers;
 
 import com.example.BookMyShow.dto.Reqdto.UserEntryDto;
+import com.example.BookMyShow.dto.Resdto.TicketResponseDto;
 import com.example.BookMyShow.models.User;
 import com.example.BookMyShow.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.RequestEntity;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
@@ -34,10 +36,10 @@ public class userController {
         }
     }
 
+    // list out all current users:
     @GetMapping("/all")
     public ResponseEntity<List<User>> getUsers(){
         try{
-
             List<User> users = userService.getUsers();
             return new ResponseEntity<>(users , HttpStatus.OK);
         }
@@ -45,5 +47,23 @@ public class userController {
             return new ResponseEntity<>(null , HttpStatus.NOT_FOUND);
         }
     }
+
+    // give tickets for current user:
+
+    @GetMapping("/tickets/{userid}")
+    public ResponseEntity<List<TicketResponseDto>> getTickets(@PathVariable Integer userid){
+
+        try{
+            List<TicketResponseDto> ticketResponseDtoList = userService.getTickets(userid);
+            return new ResponseEntity<>(ticketResponseDtoList , HttpStatus.OK);
+        }
+
+        catch (Exception e){
+            return new ResponseEntity<>(null , HttpStatus.NOT_FOUND);
+        }
+
+    }
+
+
 
 }
