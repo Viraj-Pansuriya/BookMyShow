@@ -1,11 +1,13 @@
 package com.example.BookMyShow.models;
 
 import jakarta.persistence.*;
+import lombok.Builder;
 
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 @Entity
+@Builder
 public class Movie {
 
     @Id
@@ -19,9 +21,11 @@ public class Movie {
     private String genre;
     private String language;
     @OneToMany(mappedBy = "movie" , cascade = CascadeType.ALL)
-    private List<Show> showList = new ArrayList<>();
+    private List<Shows> showList = new ArrayList<>();
 
-    public Movie(int id, String movieName, int duration, Double rating, Date releasedDate, String genre, String language, List<Show> showList) {
+    public Movie(){}
+
+    public Movie(int id, String movieName, int duration, Double rating, Date releasedDate, String genre, String language, List<Shows> showList) {
         this.id = id;
         MovieName = movieName;
         this.duration = duration;
@@ -88,11 +92,11 @@ public class Movie {
         this.language = language;
     }
 
-    public List<Show> getShowList() {
+    public List<Shows> getShowList() {
         return showList;
     }
 
-    public void setShowList(List<Show> showList) {
+    public void setShowList(List<Shows> showList) {
         this.showList = showList;
     }
 }

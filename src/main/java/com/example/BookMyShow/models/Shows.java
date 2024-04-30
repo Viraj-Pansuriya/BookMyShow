@@ -3,6 +3,7 @@ package com.example.BookMyShow.models;
 
 
 import jakarta.persistence.*;
+import lombok.Builder;
 
 import java.sql.Time;
 import java.util.ArrayList;
@@ -10,7 +11,8 @@ import java.util.Date;
 import java.util.List;
 
 @Entity
-public class Show {
+@Builder
+public class Shows {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -31,7 +33,7 @@ public class Show {
     @OneToMany(mappedBy = "show" , cascade = CascadeType.ALL)
     private List<Ticket> ticketList = new ArrayList<>();
 
-    public Show(int ID, Time time, Date date, Movie movie, Theater theater, List<ShowSeat> showSeatList, List<Ticket> ticketList) {
+    public Shows(int ID, Time time, Date date, Movie movie, Theater theater, List<ShowSeat> showSeatList, List<Ticket> ticketList) {
         this.ID = ID;
         this.time = time;
         this.date = date;

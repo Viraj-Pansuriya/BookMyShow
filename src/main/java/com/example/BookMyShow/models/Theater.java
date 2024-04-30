@@ -1,11 +1,13 @@
 package com.example.BookMyShow.models;
 
 import jakarta.persistence.*;
+import lombok.Builder;
 
 import java.util.ArrayList;
 import java.util.List;
 
 @Entity
+@Builder
 public class Theater {
 
     @Id
@@ -17,9 +19,9 @@ public class Theater {
     @OneToMany(mappedBy = "theater" , cascade = CascadeType.ALL)
     private List <TheaterSeat > theaterSeatList = new ArrayList<>();
     @OneToMany(mappedBy = "theater" , cascade = CascadeType.ALL)
-    private List <Show> showList = new ArrayList<>();
+    private List <Shows> showList = new ArrayList<>();
 
-    public Theater(int id, String name, String address, List<TheaterSeat> theaterSeatList, List<Show> showList) {
+    public Theater(int id, String name, String address, List<TheaterSeat> theaterSeatList, List<Shows> showList) {
         this.id = id;
         this.name = name;
         this.address = address;
@@ -59,11 +61,11 @@ public class Theater {
         this.theaterSeatList = theaterSeatList;
     }
 
-    public List<Show> getShowList() {
+    public List<Shows> getShowList() {
         return showList;
     }
 
-    public void setShowList(List<Show> showList) {
+    public void setShowList(List<Shows> showList) {
         this.showList = showList;
     }
 }

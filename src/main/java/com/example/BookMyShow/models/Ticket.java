@@ -17,7 +17,7 @@ public class Ticket {
 
     @ManyToOne
     @JoinColumn
-    private Show show;
+    private Shows show;
 
     @ManyToOne
     @JoinColumn(nullable = true)
@@ -55,11 +55,11 @@ public class Ticket {
         this.bookedAt = bookedAt;
     }
 
-    public Show getShow() {
+    public Shows getShow() {
         return show;
     }
 
-    public void setShow(Show show) {
+    public void setShow(Shows show) {
         this.show = show;
     }
 
@@ -71,7 +71,7 @@ public class Ticket {
         this.user = user;
     }
 
-    public Ticket(int ID, int totalprice, int numberofSeats, Date bookedAt, Show show, User user) {
+    public Ticket(int ID, int totalprice, int numberofSeats, Date bookedAt, Shows show, User user) {
         this.ID = ID;
         this.totalprice = totalprice;
         this.numberofSeats = numberofSeats;

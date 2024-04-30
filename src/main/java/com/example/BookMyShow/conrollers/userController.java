@@ -10,6 +10,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @Controller
 @RequestMapping("/user")
 public class userController {
@@ -33,15 +35,16 @@ public class userController {
         }
     }
 
+    @GetMapping("/all")
+    public ResponseEntity<List<User>> getUsers(){
+        try{
 
-    @ResponseBody
-    @GetMapping("/getTickets")
-    public String getTickets(){
-        return "Inside a generating total number of tickets.";
+            List<User> users = userService.getUsers();
+            return new ResponseEntity<>(users , HttpStatus.OK);
+        }
+        catch (Exception e){
+            return new ResponseEntity<>(null , HttpStatus.NOT_FOUND);
+        }
     }
-
-
-
-
 
 }

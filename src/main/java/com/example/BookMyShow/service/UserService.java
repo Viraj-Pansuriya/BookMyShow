@@ -7,6 +7,8 @@ import com.example.BookMyShow.repo.UserRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class UserService {
 
@@ -17,20 +19,19 @@ public class UserService {
 
         String result="";
         try{
-
             User user = UserTransformer.transform(userEntryDto);
-
             userRepo.save(user);
-            result = "Added";
-
-
+            result = "Added Successfully";
         }
         catch (Exception e){
-
             result = e.toString();
-
         }
-
         return result;
+    }
+
+    public List<User> getUsers() {
+
+        List <User>userList = userRepo.findAll();
+        return userList;
     }
 }

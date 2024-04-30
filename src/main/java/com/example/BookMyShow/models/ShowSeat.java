@@ -16,9 +16,9 @@ public class ShowSeat {
 
     @ManyToOne
     @JoinColumn
-    private Show show;
+    private Shows show;
 
-    public ShowSeat(int id, String seatNo, String seatType, int price, boolean isAvailable, boolean isFoodContains, Show show) {
+    public ShowSeat(int id, String seatNo, String seatType, int price, boolean isAvailable, boolean isFoodContains, Shows show) {
         this.id = id;
         this.seatNo = seatNo;
         this.seatType = seatType;
@@ -76,11 +76,11 @@ public class ShowSeat {
         isFoodContains = foodContains;
     }
 
-    public Show getShow() {
+    public Shows getShow() {
         return show;
     }
 
-    public void setShow(Show show) {
+    public void setShow(Shows show) {
         this.show = show;
     }
 }
