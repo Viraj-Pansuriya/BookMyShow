@@ -1,4 +1,4 @@
-package com.example.BookMyShow.conrollers;
+package com.example.BookMyShow.controllers;
 
 import com.example.BookMyShow.dto.Reqdto.UserEntryDto;
 import com.example.BookMyShow.models.User;
@@ -7,7 +7,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
-import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;

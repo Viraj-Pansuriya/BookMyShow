@@ -28,6 +28,10 @@ public class ShowSeat {
         this.show = show;
     }
 
+    public ShowSeat() {
+
+    }
+
     public int getId() {
         return id;
     }

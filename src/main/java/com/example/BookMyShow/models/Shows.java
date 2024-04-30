@@ -17,6 +17,7 @@ public class Shows {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int ID;
+
     private Time time;
 
     private Date date;
@@ -33,6 +34,8 @@ public class Shows {
     @OneToMany(mappedBy = "show" , cascade = CascadeType.ALL)
     private List<Ticket> ticketList = new ArrayList<>();
 
+    private Shows(){}
+
     public Shows(int ID, Time time, Date date, Movie movie, Theater theater, List<ShowSeat> showSeatList, List<Ticket> ticketList) {
         this.ID = ID;
         this.time = time;
@@ -41,6 +44,19 @@ public class Shows {
         this.theater = theater;
         this.showSeatList = showSeatList;
         this.ticketList = ticketList;
+    }
+
+    @Override
+    public String toString() {
+        return "Shows{" +
+                "ID=" + ID +
+                ", time=" + time +
+                ", date=" + date +
+                ", movie=" + movie +
+                ", theater=" + theater +
+                ", showSeatList=" + showSeatList +
+                ", ticketList=" + ticketList +
+                '}';
     }
 
     public int getID() {

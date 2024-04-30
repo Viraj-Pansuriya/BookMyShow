@@ -5,38 +5,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8a7bb99d-0885-4c96-a477-e796d2d418a6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/BookMyShow/Transformers/MovieTransformer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/BookMyShow/Transformers/ShowTransformer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/BookMyShow/Transformers/TheaterTransformer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/BookMyShow/dto/Reqdto/MovieEntryDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/BookMyShow/dto/Reqdto/ShowEntryDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/BookMyShow/dto/Reqdto/TheaterEntryDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/BookMyShow/service/MovieService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/BookMyShow/service/ShowService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/BookMyShow/service/Theaterservice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/BookMyShow/dto/Reqdto/ShowSeatDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/BookMyShow/dto/Reqdto/TheaterSeatDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/BookMyShow/Transformers/UserTransformer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/BookMyShow/Transformers/UserTransformer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/BookMyShow/conrollers/movieController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/BookMyShow/conrollers/movieController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/BookMyShow/conrollers/showController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/BookMyShow/conrollers/showController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/BookMyShow/conrollers/theaterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/BookMyShow/conrollers/theaterController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/BookMyShow/conrollers/userController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/BookMyShow/conrollers/userController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/BookMyShow/models/Movie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/BookMyShow/models/Movie.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/BookMyShow/models/Show.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/BookMyShow/models/Show.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/BookMyShow/Transformers/ShowTransformer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/BookMyShow/Transformers/ShowTransformer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/BookMyShow/conrollers/movieController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/BookMyShow/controllers/movieController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/BookMyShow/conrollers/showController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/BookMyShow/controllers/showController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/BookMyShow/conrollers/theaterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/BookMyShow/controllers/theaterController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/BookMyShow/conrollers/userController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/BookMyShow/controllers/userController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/BookMyShow/models/ShowSeat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/BookMyShow/models/ShowSeat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/BookMyShow/models/Shows.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/BookMyShow/models/Shows.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/BookMyShow/models/Theater.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/BookMyShow/models/Theater.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/BookMyShow/repo/MovieRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/BookMyShow/repo/MovieRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/BookMyShow/repo/ShowRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/BookMyShow/repo/ShowRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/BookMyShow/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/BookMyShow/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/BookMyShow/conrollers/movieController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/BookMyShow/conrollers/movieController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/BookMyShow/conrollers/showController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/BookMyShow/conrollers/showController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/BookMyShow/conrollers/theaterController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/BookMyShow/conrollers/theaterController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/BookMyShow/conrollers/userController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/BookMyShow/conrollers/userController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/BookMyShow/models/Movie.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/BookMyShow/models/Movie.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/BookMyShow/models/Show.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/BookMyShow/models/Show.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/BookMyShow/models/TheaterSeat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/BookMyShow/models/TheaterSeat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/BookMyShow/repo/TheaterRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/BookMyShow/repo/TheaterRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/BookMyShow/service/ShowService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/BookMyShow/service/ShowService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/BookMyShow/service/Theaterservice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/BookMyShow/service/Theaterservice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/BookMyShow/Transformers/ShowTransformer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/BookMyShow/Transformers/ShowTransformer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/BookMyShow/conrollers/movieController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/BookMyShow/conrollers/showController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/BookMyShow/conrollers/theaterController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/BookMyShow/conrollers/userController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/BookMyShow/models/Shows.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/BookMyShow/models/Shows.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/BookMyShow/models/Theater.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/BookMyShow/models/Theater.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/BookMyShow/repo/MovieRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/BookMyShow/repo/MovieRepo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/BookMyShow/repo/ShowRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/BookMyShow/repo/ShowRepo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/BookMyShow/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/BookMyShow/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/BookMyShow/models/TheaterSeat.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/BookMyShow/models/TheaterSeat.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/BookMyShow/repo/TheaterRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/BookMyShow/repo/TheaterRepo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/BookMyShow/service/ShowService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/BookMyShow/service/ShowService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/BookMyShow/service/Theaterservice.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/BookMyShow/service/Theaterservice.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -20,6 +20,8 @@ public class TheaterSeat {
         this.theater = theater;
     }
 
+    public TheaterSeat(){}
+
     public int getId() {
         return id;
     }

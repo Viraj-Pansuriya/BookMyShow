@@ -1,8 +1,6 @@
-package com.example.BookMyShow.conrollers;
+package com.example.BookMyShow.controllers;
 
 import com.example.BookMyShow.dto.Reqdto.MovieEntryDto;
-import com.example.BookMyShow.dto.Reqdto.UserEntryDto;
-import com.example.BookMyShow.repo.MovieRepo;
 import com.example.BookMyShow.service.MovieService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -29,4 +27,6 @@ public class movieController {
             return new ResponseEntity<>(result , HttpStatus.BAD_REQUEST);
         }
     }
+
+
 }

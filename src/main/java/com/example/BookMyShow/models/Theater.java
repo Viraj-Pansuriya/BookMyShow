@@ -21,6 +21,8 @@ public class Theater {
     @OneToMany(mappedBy = "theater" , cascade = CascadeType.ALL)
     private List <Shows> showList = new ArrayList<>();
 
+    public Theater(){}
+
     public Theater(int id, String name, String address, List<TheaterSeat> theaterSeatList, List<Shows> showList) {
         this.id = id;
         this.name = name;
