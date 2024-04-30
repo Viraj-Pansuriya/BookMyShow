@@ -1,6 +1,5 @@
 <component name="libraryTable">
-  <library name="Maven: org.yaml:snakeyaml:2.2" type="java-imported" external-system-id="Maven">
-    <properties groupId="org.yaml" artifactId="snakeyaml" version="2.2" />
+  <library name="Maven: org.yaml:snakeyaml:2.2">
     <CLASSES>
       <root url="jar://$MAVEN_REPOSITORY$/org/yaml/snakeyaml/2.2/snakeyaml-2.2.jar!/" />
     </CLASSES>

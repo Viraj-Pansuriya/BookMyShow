@@ -1,6 +1,5 @@
 <component name="libraryTable">
-  <library name="Maven: org.mockito:mockito-core:5.7.0" type="java-imported" external-system-id="Maven">
-    <properties groupId="org.mockito" artifactId="mockito-core" version="5.7.0" />
+  <library name="Maven: org.mockito:mockito-core:5.7.0">
     <CLASSES>
       <root url="jar://$MAVEN_REPOSITORY$/org/mockito/mockito-core/5.7.0/mockito-core-5.7.0.jar!/" />
     </CLASSES>

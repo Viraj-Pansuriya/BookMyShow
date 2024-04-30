@@ -20,7 +20,7 @@ public class Ticket {
     private Show show;
 
     @ManyToOne
-    @JoinColumn
+    @JoinColumn(nullable = true)
     private User user;
 
     public int getID() {

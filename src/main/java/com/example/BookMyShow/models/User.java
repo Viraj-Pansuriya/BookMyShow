@@ -1,11 +1,13 @@
 package com.example.BookMyShow.models;
 
 import jakarta.persistence.*;
+import lombok.Builder;
 
 import java.util.ArrayList;
 import java.util.List;
 
 @Entity
+@Builder
 public class User {
 
     @Id
@@ -23,7 +25,10 @@ public class User {
     @OneToMany(mappedBy = "user" , cascade = CascadeType.ALL)
     private List< Ticket > ticketList = new ArrayList<>();
 
-    public User(int ID, String name, String email, String mobile, int age, String address, String gender, List<Ticket> ticketList) {
+    public User(){
+
+    };
+    public User(int ID, String name, String email, String mobile, int age, String address, String gender , List<Ticket> ticketList) {
         this.ID = ID;
         this.name = name;
         this.email = email;

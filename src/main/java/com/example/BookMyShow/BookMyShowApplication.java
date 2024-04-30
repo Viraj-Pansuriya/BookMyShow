@@ -1,5 +1,6 @@
 package com.example.BookMyShow;
 
+import org.hibernate.dialect.Dialect;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -9,6 +10,7 @@ public class BookMyShowApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(BookMyShowApplication.class, args);
 		System.out.println("Welcome to BookMyShow");
+
 	}
 
 }
