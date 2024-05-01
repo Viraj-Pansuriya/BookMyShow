@@ -5,22 +5,67 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8a7bb99d-0885-4c96-a477-e796d2d418a6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/BookMyShow/controllers/TicketController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/BookMyShow/dto/Reqdto/TicketEntryDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/BookMyShow/dto/Resdto/TicketResponseDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/BookMyShow/repo/ShowSeatRepo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/BookMyShow/service/TicketServie.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_dataformat_jackson_dataformat_yaml_2_15_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_18_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_core_2_6_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_schema_2_6_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_spi_2_6_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_spring_web_2_6_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_swagger2_2_6_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_swagger_common_2_6_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_swagger_ui_2_6_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_core_v3_swagger_annotations_jakarta_2_2_21.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_core_v3_swagger_core_jakarta_2_2_21.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_core_v3_swagger_models_jakarta_2_2_21.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_swagger_annotations_1_5_10.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_swagger_models_1_5_10.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_validation_jakarta_validation_api_3_0_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_javax_servlet_api_4_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_13_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mapstruct_mapstruct_1_0_0_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springdoc_springdoc_openapi_starter_common_2_5_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springdoc_springdoc_openapi_starter_webmvc_api_2_5_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springdoc_springdoc_openapi_starter_webmvc_ui_2_5_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_devtools_3_2_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_security_3_2_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_plugin_spring_plugin_core_1_2_0_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_plugin_spring_plugin_metadata_1_2_0_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_config_6_2_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_core_6_2_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_crypto_6_2_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_web_6_2_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_webjars_swagger_ui_5_13_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/BookMyShow/SecurityConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/BookMyShow/repo/TicketRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_3_2_5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_4_2.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookMyShow.iml" beforeDir="false" afterPath="$PROJECT_DIR$/BookMyShow.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/BookMyShow/BookMyShowApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/BookMyShow/BookMyShowApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/BookMyShow/controllers/TicketController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/BookMyShow/controllers/TicketController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/BookMyShow/controllers/movieController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/BookMyShow/controllers/movieController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/BookMyShow/controllers/theaterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/BookMyShow/controllers/theaterController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/BookMyShow/controllers/userController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/BookMyShow/controllers/userController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/BookMyShow/controllers/showController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/BookMyShow/controllers/showController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/BookMyShow/models/Shows.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/BookMyShow/models/Shows.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/BookMyShow/models/Ticket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/BookMyShow/models/Ticket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/BookMyShow/models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/BookMyShow/models/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/BookMyShow/service/MovieService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/BookMyShow/service/MovieService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/BookMyShow/service/ShowService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/BookMyShow/service/ShowService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/BookMyShow/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/BookMyShow/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/BookMyShow/controllers/userController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/BookMyShow/controllers/userController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/BookMyShow/service/TicketServie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/BookMyShow/service/TicketServie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/BookMyShow/BookMyShowApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/BookMyShow/BookMyShowApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/BookMyShow/controllers/TicketController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/BookMyShow/controllers/TicketController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/BookMyShow/controllers/movieController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/BookMyShow/controllers/movieController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/BookMyShow/controllers/showController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/BookMyShow/controllers/showController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/BookMyShow/models/Shows$ShowsBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/BookMyShow/models/Shows$ShowsBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/BookMyShow/models/Shows.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/BookMyShow/models/Shows.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/BookMyShow/models/Ticket.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/BookMyShow/models/Ticket.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/BookMyShow/models/User$UserBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/BookMyShow/models/User$UserBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/BookMyShow/models/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/BookMyShow/models/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/BookMyShow/service/MovieService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/BookMyShow/service/MovieService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/BookMyShow/service/ShowService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/BookMyShow/service/ShowService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/BookMyShow/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/BookMyShow/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/BookMyShow/service/Theaterservice.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/BookMyShow/service/Theaterservice.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/BookMyShow/service/TicketServie.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/BookMyShow/service/TicketServie.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,12 +111,18 @@
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "E:/spring-boot/BookMyShow",
+    "last_opened_file_path": "/home/viraj/Projects/temp_clone/Book-My-Show",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
   }
 }]]></component>
+  <component name="Push.Settings">
+    <force-push-targets>
+      <force-push-target remote-path="origin" branch="testing" />
+    </force-push-targets>
+  </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.example.BookMyShow.service" />
@@ -81,6 +132,12 @@
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.example.BookMyShow.dto.Resdto" />
     </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean" />
+      <command value="mvn install" />
+    </option>
   </component>
   <component name="RunManager">
     <configuration name="com.example.BookMyShow.BookMyShowApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">

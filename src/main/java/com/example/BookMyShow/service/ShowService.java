@@ -104,4 +104,30 @@ public class ShowService {
         return result;
 
     }
+
+    // reset all seat for available.
+    public String reset(Integer show_id) {
+
+        String result = "";
+
+       try {
+           Optional<Shows> show = showRepo.findById(show_id);
+           Shows shows= show.get();
+
+           List<ShowSeat> show_list = shows.getShowSeatList();
+
+           for(ShowSeat showSeat : show_list){
+               showSeat.setAvailable(true);
+           }
+           result = "Successfully marked all seat as available";
+           showRepo.save(shows);
+       }
+       catch (Exception e){
+           result = e.toString();
+       }
+
+       return result;
+
+
+    }
 }

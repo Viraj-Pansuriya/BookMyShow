@@ -2,6 +2,7 @@ package com.example.BookMyShow.models;
 
 
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 import lombok.Builder;
 
@@ -31,6 +32,7 @@ public class Shows {
     @OneToMany(mappedBy = "show" , cascade = CascadeType.ALL)
     private List<ShowSeat> showSeatList = new ArrayList<>();
 
+    @JsonManagedReference
     @OneToMany(mappedBy = "show" , cascade = CascadeType.ALL)
     private List<Ticket> ticketList = new ArrayList<>();
 
