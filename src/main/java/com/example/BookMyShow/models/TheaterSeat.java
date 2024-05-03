@@ -1,5 +1,6 @@
 package com.example.BookMyShow.models;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.*;
 
 @Entity
@@ -11,6 +12,7 @@ public class TheaterSeat {
     private String seatType;
     @ManyToOne
     @JoinColumn
+    @JsonBackReference
     private Theater theater;
 
     public TheaterSeat(int id, String seatNo, String seatType, Theater theater) {

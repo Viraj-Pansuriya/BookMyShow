@@ -2,18 +2,19 @@ package com.example.BookMyShow.service;
 
 import com.example.BookMyShow.Transformers.UserTransformer;
 import com.example.BookMyShow.dto.Reqdto.UserEntryDto;
+import com.example.BookMyShow.dto.Resdto.AvailableShowResponse;
 import com.example.BookMyShow.dto.Resdto.TicketResponseDto;
+import com.example.BookMyShow.models.Movie;
 import com.example.BookMyShow.models.Shows;
 import com.example.BookMyShow.models.Ticket;
 import com.example.BookMyShow.models.User;
+import com.example.BookMyShow.repo.MovieRepo;
 import com.example.BookMyShow.repo.ShowRepo;
 import com.example.BookMyShow.repo.UserRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Optional;
+import java.util.*;
 
 @Service
 public class UserService {
@@ -22,6 +23,8 @@ public class UserService {
     private UserRepo userRepo;
     @Autowired
     private ShowRepo showRepo;
+    @Autowired
+    private MovieRepo movieRepo;
 
     public String addUser(UserEntryDto userEntryDto) {
 
@@ -73,6 +76,32 @@ public class UserService {
         }
 
         return ticketResponseDtoList;
+
+
+    }
+
+    public List<AvailableShowResponse> getShows(Integer movie_id) {
+
+        Optional<Movie> temp_movie = movieRepo.findById(movie_id);
+        Movie movie = temp_movie.get();
+
+        List < AvailableShowResponse > showsList = new ArrayList<>();
+
+//        HashMap< String , List <AvailableShowResponse > > available_showList = new HashMap<>();
+
+        for(Shows shows : movie.getShowList()){
+            if(shows.getBooked() != (int)shows.getTheater().getTheaterSeatList().size()){
+                AvailableShowResponse availableShowResponse = new AvailableShowResponse();
+                availableShowResponse.setTime(shows.getTime());
+                availableShowResponse.setDate(shows.getDate());
+                availableShowResponse.setTheater_name(shows.getTheater().getName());
+                availableShowResponse.setShowSeatList(shows.getShowSeatList());
+                availableShowResponse.setAddress(shows.getTheater().getAddress());
+                showsList.add(availableShowResponse);
+            }
+        }
+
+        return showsList;
 
 
     }

@@ -1,7 +1,8 @@
 package com.example.BookMyShow.controllers;
 
 import com.example.BookMyShow.dto.Reqdto.TicketEntryDto;
-import com.example.BookMyShow.service.TicketServie;
+import com.example.BookMyShow.service.TicketService;
+import jakarta.mail.internet.AddressException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -12,11 +13,11 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/ticket")
 public class TicketController {
     @Autowired
-    private TicketServie ticketServie;
+    private TicketService ticketService;
 
     @PostMapping("/book")
-    public ResponseEntity<String> generateTicket(@RequestBody TicketEntryDto ticketEntryDto){
-        String result = ticketServie.generateTicket(ticketEntryDto);
+    public ResponseEntity<String> generateTicket(@RequestBody TicketEntryDto ticketEntryDto) throws AddressException {
+        String result = ticketService.generateTicket(ticketEntryDto);
         return new ResponseEntity<>(result , HttpStatus.CREATED);
     }
 
@@ -24,7 +25,7 @@ public class TicketController {
     public ResponseEntity<String> cancel(@PathVariable Integer ticket_id){
 
         try{
-            String result = ticketServie.cancel(ticket_id);
+            String result = ticketService.cancel(ticket_id);
             return new ResponseEntity<>(result , HttpStatus.CREATED);
         }
         catch (Exception e){

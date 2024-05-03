@@ -2,9 +2,11 @@ package com.example.BookMyShow.models;
 
 
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 import lombok.Builder;
+import org.springframework.format.annotation.DateTimeFormat;
 
 import java.sql.Time;
 import java.util.ArrayList;
@@ -19,16 +21,24 @@ public class Shows {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int ID;
 
+
+    @DateTimeFormat(pattern = "HH:MM")
     private Time time;
 
+    @DateTimeFormat(pattern = "MM/DD/YYYY")
     private Date date;
+
+    @JsonBackReference
     @ManyToOne
     @JoinColumn
     private Movie movie;
     @ManyToOne
     @JoinColumn
+    @JsonBackReference
     private Theater theater;
 
+
+    @JsonManagedReference
     @OneToMany(mappedBy = "show" , cascade = CascadeType.ALL)
     private List<ShowSeat> showSeatList = new ArrayList<>();
 
@@ -36,9 +46,11 @@ public class Shows {
     @OneToMany(mappedBy = "show" , cascade = CascadeType.ALL)
     private List<Ticket> ticketList = new ArrayList<>();
 
+    private int booked;
+
     private Shows(){}
 
-    public Shows(int ID, Time time, Date date, Movie movie, Theater theater, List<ShowSeat> showSeatList, List<Ticket> ticketList) {
+    public Shows(int ID, Time time, Date date, Movie movie, Theater theater, List<ShowSeat> showSeatList, List<Ticket> ticketList , int booked) {
         this.ID = ID;
         this.time = time;
         this.date = date;
@@ -46,19 +58,18 @@ public class Shows {
         this.theater = theater;
         this.showSeatList = showSeatList;
         this.ticketList = ticketList;
+        this.booked = 0;
     }
 
-    @Override
-    public String toString() {
-        return "Shows{" +
-                "ID=" + ID +
-                ", time=" + time +
-                ", date=" + date +
-                ", movie=" + movie +
-                ", theater=" + theater +
-                ", showSeatList=" + showSeatList +
-                ", ticketList=" + ticketList +
-                '}';
+
+
+
+    public int getBooked() {
+        return booked;
+    }
+
+    public void setBooked(int booked) {
+        this.booked = booked;
     }
 
     public int getID() {

@@ -4,6 +4,7 @@ import com.example.BookMyShow.models.Movie;
 import com.example.BookMyShow.models.Theater;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
+import org.springframework.format.annotation.DateTimeFormat;
 
 import java.sql.Time;
 import java.util.Date;
@@ -11,7 +12,9 @@ import java.util.Date;
 public class ShowEntryDto {
 
 
+
     private Time time;
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
     private Date date;
     private int movie_id;
     private int theater_id;

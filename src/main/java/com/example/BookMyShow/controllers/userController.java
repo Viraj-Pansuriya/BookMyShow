@@ -1,7 +1,9 @@
 package com.example.BookMyShow.controllers;
 
 import com.example.BookMyShow.dto.Reqdto.UserEntryDto;
+import com.example.BookMyShow.dto.Resdto.AvailableShowResponse;
 import com.example.BookMyShow.dto.Resdto.TicketResponseDto;
+import com.example.BookMyShow.models.Shows;
 import com.example.BookMyShow.models.User;
 import com.example.BookMyShow.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -61,6 +63,21 @@ public class userController {
         catch (Exception e){
             return new ResponseEntity<>(null , HttpStatus.NOT_FOUND);
         }
+
+    }
+
+    @GetMapping("/shows/{Movie_id}")
+    public ResponseEntity<List<AvailableShowResponse>> getShows(@PathVariable Integer Movie_id){
+
+        try{
+            List<AvailableShowResponse> showsList = userService.getShows(Movie_id);
+            return new ResponseEntity<>(showsList , HttpStatus.OK);
+        }
+        catch (Exception e)
+        {
+            return new ResponseEntity<>(null , HttpStatus.NOT_FOUND);
+        }
+
 
     }
 

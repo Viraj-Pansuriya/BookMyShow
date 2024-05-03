@@ -1,5 +1,6 @@
 package com.example.BookMyShow.models;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.*;
 
 @Entity
@@ -14,6 +15,7 @@ public class ShowSeat {
     private boolean isAvailable;
     private boolean isFoodContains;
 
+    @JsonBackReference
     @ManyToOne
     @JoinColumn
     private Shows show;

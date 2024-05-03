@@ -1,5 +1,6 @@
 package com.example.BookMyShow.models;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 import lombok.Builder;
 
@@ -16,8 +17,10 @@ public class Theater {
     private String name;
     @Column(unique = true)
     private String address;
+    @JsonManagedReference
     @OneToMany(mappedBy = "theater" , cascade = CascadeType.ALL)
     private List <TheaterSeat > theaterSeatList = new ArrayList<>();
+    @JsonManagedReference
     @OneToMany(mappedBy = "theater" , cascade = CascadeType.ALL)
     private List <Shows> showList = new ArrayList<>();
 
